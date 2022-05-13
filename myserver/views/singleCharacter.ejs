@@ -1,0 +1,25 @@
+<%- include("common_header.ejs", {title:name}) %>
+
+<div class="aztros">
+  <h1> <%- name %></h1>
+  <hr>
+  <p><b>ID: </b> <%- id %>  </p>  
+  <p><b>Status: </b> <%- status %>  </p>
+  <p><b>Species: </b> <%- species %> </p>
+  <p><b>Type: </b> <%- type %> </p>
+  <p><b>Gender: </b> <%- gender %>  </p>
+  <p><b>Origin: </b> <%= origin.name %> </p>
+  <p><b>Location: </b> <%= location.name %> </p>
+  <p><b>Created: </b> <%- created %> <br></p>
+
+  <!-- <ul>
+    <% for (let epi of episode) { %>
+      <li><%- epi %></li>
+    <% } %>
+  </ul> -->
+</div>
+<hr>
+<a href="/rick_and_morty/">Back to List</a>
+
+</body>
+</html>
